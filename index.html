@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SAMUFLIX</title>
+
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profiles.css">
+</head>
+
+<body>
+
+    <main id="app">
+
+        <div class="position-absolute top-0 start-0 m-4">
+            <span id="logo-samuflix" class="fw-bold fs-3 vermelho-vivo">
+                SAMUFLIX
+            </span>
+        </div>
+
+        <!-- Tela de seleção de contas -->
+        <section id="contas-tela">
+            <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+
+                <!-- Conteúdo da tela -->
+                <div class="text-center">
+
+                    <!-- Título -->
+                    <h1 class="mb-3 text-white">
+                        Quem está assistindo?
+                    </h1>
+
+                    <!-- Contas -->
+                    <div class="row justify-content-center g-2">
+
+                        <!-- Conta Samuel -->
+                        <div class="col-auto">
+                            <a href="#" id="conta-projetos" class="box d-flex flex-column align-items-center text-decoration-none">
+                                <img
+                                    src="assets/profile/img-projetos.jpe"
+                                    alt="Conta Projetos"
+                                    class="profile-img">
+                                <span class="mt-3">
+                                    Projetos
+                                </span>
+                            </a>
+                        </div>
+
+
+                        <!-- Conta Projetos -->
+                        <div class="col-auto">
+                            <a href="#" id="conta-samuel" class="box d-flex flex-column align-items-center text-decoration-none">
+                                <img
+                                    src="assets/s.jpeg"
+                                    alt="Conta Samuel"
+                                    class="profile-img">
+
+                                <span class="mt-3">
+                                    Samuel
+                                </span>
+                            </a>
+                        </div>
+                        <!-- Conta Infantil -->
+                        <div class="col-auto">
+                            <a href="#" id="conta-infantil" class="box d-flex flex-column align-items-center text-decoration-none">
+                                <img
+                                    src="assets/profile/infantil.jpe"
+                                    alt="Conta Infantil"
+                                    class="profile-img">
+
+                                <span class="mt-3">
+                                    Infantil
+                                </span>
+                            </a>
+                        </div>
+                        <!--Criar nova conta-->
+                        <div class="col-auto">
+                            <a href="#" id="conta-nova" class="box d-flex flex-column align-items-center text-decoration-none">
+                                <img 
+                                    src="assets/profile/adicionar-perfil.jpe"
+                                    alt="Criar Nova Conta"
+                                    class="profile-img">
+
+                                <span class="mt-3">
+                                    Adicionar Perfil
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none text-white gerenciar-btn">
+                            ✎ Gerenciar perfil
+                        </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de carregamento -->
+
+        <section id="intro-tela">
+            <img id="intro-img" src="assets/s.jpeg" alt="Tela de carregamento">
+        </section>
+
+
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="js/app.js"></script>
+    <script src="js/profiles.js"></script>
+
+</body>
+
+</html>

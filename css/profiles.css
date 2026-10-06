@@ -1,0 +1,120 @@
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box {
+    width: 140px;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    transition: background-color 0.2s ease;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+/* Titulo principal */
+h1 {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 700; /* Deixa ela mais gordinha e destacada */
+}
+
+.box span {
+    font-family: 'Geologica', sans-serif !important;
+    font-weight: 400;
+    color: #808080;
+}
+
+.gerenciar-btn {
+  padding: 9px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+
+  background-color: transparent;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.gerenciar-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: white;
+
+  color: white;
+}
+
+
+/*======================================================================*/
+/* Tela saindo pra animação */
+/*======================================================================*/
+#contas-tela {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+#contas-tela.saindo {
+    transform: scale(1.05);
+    opacity: 0;
+}
+
+#logo-samuflix {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+#logo-samuflix.saindo {
+    transform: scale(1.05);
+    opacity: 0;
+}
+
+/*======================================================================*/
+/* Intro tela */
+/*======================================================================*/
+
+#intro-tela {
+    position: fixed;
+    inset: 0;
+
+    background-color: #000;
+
+    opacity: 0;
+    visibility: hidden;
+
+    overflow: hidden;
+
+    z-index: 10;
+
+    transition: opacity 0.8s ease;
+}
+
+#intro-tela.entrando{
+    opacity: 1;
+    visibility: visible;
+}
+
+#intro-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transform: scale(1);
+
+    transition: transform 0.8s ease-out;
+}
+
+
+#intro-tela.entrando #intro-img {
+    transform: scale(1.08);
+}
