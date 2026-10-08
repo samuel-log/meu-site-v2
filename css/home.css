@@ -1,0 +1,46 @@
+/* Home estilo Netflix */
+#intro-img { transition: transform 10s ease-out, opacity .35s ease; }
+#intro-tela.saindo-final { opacity: 0; visibility: hidden; transition: opacity .6s ease; }
+#intro-legenda { position: absolute; left: 0; right: 0; bottom: 14vh; text-align: center; color: #fff; font: 700 clamp(28px, 6vw, 64px)/1 'Bebas Neue', sans-serif; letter-spacing: .08em; opacity: 0; transition: opacity .4s; text-shadow: 0 0 24px #e50914; }
+#intro-legenda.on { opacity: 1; }
+
+#home { background: #141414; color: #fff; min-height: 100vh; }
+#home a { color: #e5e5e5; text-decoration: none; font-size: 14px; }
+#home a:hover { color: #b3b3b3; }
+#home-nav { position: fixed; top: 0; left: 0; right: 0; height: 68px; z-index: 5; background: linear-gradient(#000c, transparent); transition: background .3s; }
+#home-nav.solida { background: #141414; }
+.nav-avatar { width: 32px; height: 32px; border-radius: 4px; object-fit: cover; }
+
+.hero { position: relative; height: 100vh; min-height: 560px; display: flex; align-items: center; overflow: hidden; }
+.hero-foto { position: absolute; inset: 0; background-size: cover; background-position: right 20%; }
+.hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #141414 5%, #14141499 45%, transparent 75%), linear-gradient(to top, #141414 0%, transparent 30%); }
+.hero-conteudo { position: relative; z-index: 2; padding: 0 5vw; max-width: 640px; }
+.hero-titulo { font: 400 clamp(72px, 12vw, 150px)/.9 'Bebas Neue', sans-serif; color: #fff; letter-spacing: .02em; }
+.hero-meta { font-size: 15px; color: #d2d2d2; margin: 12px 0; }
+.hero-resumo { font-size: clamp(15px, 1.6vw, 20px); text-shadow: 0 2px 6px #000a; margin-bottom: 22px; }
+.verde { color: #46d369; font-weight: 700; }
+.selo { border: 1px solid #fff8; padding: 0 6px; font-size: 12px; margin: 0 6px; }
+.btn-vidro { background: #6d6d6eb3 !important; border: 0; color: #fff; }
+
+#linhas { margin-top: -9vh; position: relative; z-index: 3; }
+.linha { padding: 0 5vw; margin-bottom: 3vw; }
+.linha h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+.trilho { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 30px; scrollbar-width: none; }
+.trilho::-webkit-scrollbar { display: none; }
+.card-sam { flex: 0 0 clamp(200px, 18vw, 280px); aspect-ratio: 16/9; border: 0; border-radius: 4px; background-size: cover; background-position: top; position: relative; color: #fff; transition: transform .25s ease; }
+.card-sam:hover { transform: scale(1.12); z-index: 4; box-shadow: 0 10px 30px #000; }
+.card-texto { display: flex; align-items: center; justify-content: center; padding: 12px; text-align: center; font: 400 28px/1 'Bebas Neue', sans-serif; letter-spacing: .04em; }
+.card-nome { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 10px 8px; text-align: left; font-weight: 700; background: linear-gradient(transparent, #000d); border-radius: 0 0 4px 4px; }
+.card-proj { cursor: pointer; }
+.home-rodape { padding: 40px 5vw; color: #808080; font-size: 13px; }
+
+/* Modal */
+#modal-sam .modal-content { background: #181818; color: #fff; border: 0; border-radius: 8px; overflow: hidden; }
+.modal-topo { height: 280px; background-size: cover; background-position: center 20%; position: relative; }
+.modal-topo-car { overflow: hidden; }
+.modal-topo-car .carousel-item img { aspect-ratio: 16/9; object-fit: cover; object-position: top; }
+.modal-degrade { position: absolute; inset: 0; background: linear-gradient(transparent 50%, #181818); pointer-events: none; }
+.modal-x { position: absolute; top: 12px; right: 12px; z-index: 3; width: 36px; height: 36px; border-radius: 50%; border: 0; background: #181818; color: #fff; }
+.modal-titulo { position: absolute; left: 24px; bottom: 70px; font: 400 clamp(40px, 7vw, 72px)/1 'Bebas Neue', sans-serif; text-shadow: 0 2px 10px #000; }
+.modal-play { position: absolute; left: 24px; bottom: 20px; }
+#intro-tela.claro #intro-legenda { opacity: 0; }

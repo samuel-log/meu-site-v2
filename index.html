@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profiles.css">
     <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/projetos.css">
 </head>
 
 <body>
@@ -137,7 +139,45 @@
         </section>
 
 
+
+        <!-- Tela inicial (home) -->
+        <section id="home" class="d-none">
+            <nav id="home-nav" class="d-flex align-items-center px-4 px-lg-5">
+                <span class="vermelho-vivo fs-3 me-4">SAMUFLIX</span>
+                <div class="d-none d-md-flex gap-4 flex-grow-1">
+                    <a href="#home-topo">Início</a><a href="#linha-certificacoes">Certificações</a>
+                    <a href="#linha-series">Séries favoritas</a><a href="#linha-projetos">Projetos</a>
+                    <a href="#linha-habilidades">Habilidades</a>
+                </div>
+                <img src="assets/s.jpeg" alt="Samuel" class="nav-avatar ms-auto">
+            </nav>
+
+            <header id="home-topo" class="hero">
+                <div class="hero-foto" style="background-image:url('assets/s.jpeg')"></div>
+                <div class="hero-conteudo">
+                    <h2 class="hero-titulo">Samuel</h2>
+                    <p class="hero-meta"><span class="verde">18 anos</span> <span class="selo">ADS</span> Full Stack em formação</p>
+                    <p class="hero-resumo">Estudante de Análise e Desenvolvimento de Sistemas no SENAI. Faço front-end com HTML, CSS, JavaScript e Bootstrap, e levo a competitividade do basquete para cada projeto.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light btn-lg fw-bold" data-sobre>▶ Assistir</button>
+                        <button class="btn btn-secondary btn-lg fw-bold btn-vidro" data-sobre>ⓘ Mais informações</button>
+                    </div>
+                </div>
+            </header>
+
+            <div id="linhas"></div>
+            <footer class="home-rodape">© 2026 Samuel · GitHub · LinkedIn · E-mail</footer>
+        </section>
+
+        <!-- Página de detalhe do projeto -->
+        <section id="detalhe" class="d-none"></section>
+
     </main>
+
+    <!-- Modal (Sobre / Projeto) -->
+    <div class="modal fade" id="modal-sam" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content" id="modal-conteudo"></div></div>
+    </div>
 
 
     <!-- Bootstrap JS -->
@@ -151,6 +191,8 @@
     <script src="js/app.js"></script>
     <script src="js/intro.js"></script>
     <script src="js/profiles.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/home.js"></script>
 
 </body>
 
