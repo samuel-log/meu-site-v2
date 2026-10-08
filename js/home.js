@@ -3,9 +3,9 @@
   // Para adicionar imagens: coloque o arquivo em assets/series/ e inclua uma linha aqui.
   // Cada clique no perfil sorteia uma imagem diferente da anterior. As que não existirem são ignoradas.
   const SLIDES = [
-    { src: 'assets/series/samu_bad_final_1920x1080.png' },
-    { src: 'assets/series/the_walking_dead_1920x1080.png' },
-    { src: 'assets/series/vikings_final_pose_serious_1920x1080.png' }
+    { src: 'assets/series/samuBadFinal1920x1080.png' },
+    { src: 'assets/series/theWalkingDead1920x1080.png' },
+    { src: 'assets/series/vikingsFinalPoseSerious1920x1080.png' }
     // { src: 'assets/series/samu_note.png' },
   ];
   const intro = document.getElementById('intro-img');
