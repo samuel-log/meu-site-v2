@@ -23,6 +23,15 @@
         crossorigin="anonymous"
     >
 
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/"
+        }
+    }
+    </script>
+
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/profiles.css">
@@ -194,6 +203,8 @@
     <script src="js/projects.js"></script>
     <script src="js/home.js"></script>
 
+    <!-- Script do Three.js (obrigatório ter type="module") -->
+    <script type="module" src="js/three-cena.js"></script>
 </body>
 
 </html>
